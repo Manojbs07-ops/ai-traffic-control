@@ -1,0 +1,27 @@
+{
+  "name": "ai-traffic-control",
+  "version": "1.0.0",
+  "description": "Smart Traffic Violation Reporting System - Full Stack Web Application",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "seed": "node backend/config/seed.js",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": [
+    "traffic",
+    "violation",
+    "reporting",
+    "react",
+    "express",
+    "mysql"
+  ],
+  "author": "Smart Traffic System",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
